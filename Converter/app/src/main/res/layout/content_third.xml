@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jc491164.converter.ThirdActivity"
+    tools:showIn="@layout/activity_third">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/cur_back"
+        android:fitsSystemWindows="false"
+        android:forceHasOverlappingRendering="false"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cur_back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp"
+        />
+
+    <EditText
+        android:id="@+id/editText_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_amount"
+        android:layout_below="@+id/editText_amount"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText_result"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_amount"
+        android:layout_alignBottom="@+id/editText_amount"
+        android:layout_alignStart="@+id/textView_display"
+        android:text="Amount" />
+
+    <TextView
+        android:id="@+id/textView_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_discount"
+        android:layout_alignBottom="@+id/editText_discount"
+        android:layout_alignStart="@+id/textView_amount"
+        android:text="Discount(in %)" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editText_discount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Convert"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/editText_result"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="108dp"
+        android:autofillHints="dISCOUNTED AMOUNT"
+        android:ems="10"
+        android:focusedByDefault="false"
+        android:freezesText="false"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="DISCOUNT CALCULATOR"
+        android:textSize="30sp" />
+
+</RelativeLayout>

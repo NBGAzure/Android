@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+
+    <string-array name="color_names">
+        <item>Color Names</item>
+        <item>cyan</item>
+        <item>aquamarine</item>
+        <item>darkturquoise</item>
+        <item>dodgerblue</item>
+        <item>royalblue</item>
+        <item>navy</item>
+        <item>hotpink</item>
+        <item>dimgray</item>
+        <item>slategray</item>
+        <item>black</item>
+
+    </string-array>
+    <string-array name="color_codes">
+        <item>HEX codes</item>
+        <item>00FFFF</item>
+        <item>7FFFD4</item>
+        <item>00CED1</item>
+        <item>1E90FF</item>
+        <item>4169E1</item>
+        <item>000080</item>
+        <item>FF69B4</item>
+        <item>696969</item>
+        <item>708090</item>
+        <item>000000</item>
+
+    </string-array>
+    <string name="title_activity_fourth">FourthActivity</string>
+</resources>
